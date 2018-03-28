@@ -16,7 +16,7 @@ $family-primary: $family-serif;
 $footer-background-color: $blue-grey;
 
 // bulma
-// @import "./../../node_modules/bulma/bulma.sass"; 
+// @import "./../../node_modules/bulma/bulma.sass";
 @import "./../../node_modules/bulma/sass/utilities/derived-variables";
 @import "./../../node_modules/bulma/sass/utilities/animations";
 @import "./../../node_modules/bulma/sass/utilities/mixins";
@@ -63,6 +63,3 @@ $footer-background-color: $blue-grey;
 @import "./footer";
 @import "./home";
 @import "./mainNav";
-@import "./opensource";
-@import "./features";
-@import "./code";
