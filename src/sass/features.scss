@@ -1,0 +1,30 @@
+
+@import "./variables";
+
+.Features {
+  main {
+    hr {
+      width: 60px;
+      background-color: $blue;
+      height: 2px;
+    }
+
+    .text-column {
+      align-items: center; /* align vertical */
+    }
+    .video-column {
+      position: relative;
+      padding: 0;
+      img {
+        position: absolute;
+        left:-1px; right: -1px; top: -1px; bottom: -1px;
+        width: 101%;
+        border: 2px solid white;
+      }
+      video {
+        width: 100%;
+        border:2px solid #ffffff;
+      }
+    }
+  }
+}

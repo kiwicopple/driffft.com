@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{ partial "base/header.html" . }}
+</head>
+
+<body class="Home">
+{{ partial "base/main-nav.html" . }}
+<main>
+
+
+<div class="MainHero">
+  <section class="hero is-fullheight ">
+    <div class="hero-body">
+      <div class="container">
+  			<div class="columns is-centered">
+  				<div class="FocalPoint column is-6">
+    	      <h2 class="title is-1" >
+              <img src="/images/logo-menu.svg" alt="exaQuark" width="50%" />
+              <!-- <img src="/images/logo-home.svg" alt="exaQuark" /> -->
+              <!-- <img src="/images/logo-white-radial.png" alt="exaQuark" /> -->
+              <h4 class="title is-4">exaQuark is a platform for Cross-Reality</h4>
+              <div class="">
+                We make it simple to build games which can be played on your browser, phone, and XR Headset - all sharing one global userbase.
+                <br>
+                Develop games like PokemonGo, share a userbase with every other game.
+              </div>
+    	      </h2>
+
+            {{ partial "forms/invite.html" . }}
+  				</div>
+  			</div>
+      </div>
+
+    </div>
+
+  </section>
+</div>
+
+
+
+{{ partial "base/footer.html" . }}
+
+</main>
+</body>
+</html>

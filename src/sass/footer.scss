@@ -1,0 +1,13 @@
+
+@import "./variables";
+
+.footer {
+  border-top: 2px solid $blue-grey-borders;
+  color: $dark-blue-grey;
+
+  .logo {
+    width: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+}

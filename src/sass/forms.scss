@@ -1,0 +1,32 @@
+
+#form-invite {
+  margin-top: 40px;
+  .button {
+    font-family: 'Poppins', BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #2F44CC;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    word-spacing: .1em;
+    font-size: 13px;
+    line-height: 27px;
+    height: 36px;
+  }
+}
+#form-newsletter {
+  margin-top: 40px;
+  .button {
+    font-family: 'Poppins', BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-color: #2F44CC;
+    color: #2F44CC;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    word-spacing: .1em;
+    font-size: 13px;
+    line-height: 27px;
+    height: 36px;
+    &:hover {
+      color: #fff;
+      background: #2F44CC;
+    }
+  }
+}

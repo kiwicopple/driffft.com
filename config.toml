@@ -1,0 +1,66 @@
+baseurl = "https://exaquark.com"
+title = "exaQuark. infinitely scaleable worlds."
+# theme = "exaquark"
+languageCode = "en"
+# google analytics tracking id
+googleAnalytics = "UA-93673521-3"
+
+
+[imaging]
+  # Default resample filter used for resizing. Default is Box,
+  # a simple and fast averaging filter appropriate for downscaling.
+  # See https://github.com/disintegration/imaging
+  resampleFilter = "box"
+
+# Defatult JPEG quality setting. Default is 75.
+  quality = 68
+
+
+
+[params]
+  # Date format
+  #dateFormat = "January 2, 2006"
+
+# This is displayer in About page.
+[params.social]
+
+  # twitter = "kiwicopple"
+  # facebook = "#"
+  # googleplus = "Googleplus username"
+  # instagram = "Instagram username"
+  # tumblr = "Tumblr username"
+  # flickr = "Flickr username"
+  # reddit = "kiwicopple"
+  linkedin = "https://www.linkedin.com/company/exaquark/"
+  # slideshare = "Slideshare username"
+  github = "https://github.com/exaquark"
+  # gitlab = "Gitlab username"
+  # bitbucket = "Bitbucket username"
+  # stackoverflow = "kiwicopple"
+  # jsfiddle = "Jsfiddle username"
+  # codepen = "Codepen username"
+  # deviantart = "Deviantart username"
+  # behance = "Behance username"
+  # dribbble = "Dribbble username"
+  # wordpress = "Wordpress username"
+  medium = "https://medium.com/exaquark/"
+  # foursquare = "Foursquare username"
+  # xing = "Xing username"
+  # quora = "Quora username"
+  # youtube = "Youtube username"
+  # vimeo = "Vimeo username"
+  # whatsapp = "Whatsapp username"
+  # skype = "Skype username"
+  # snapchat = "Snapchat username"
+  # pinterest = "Pinterest username"
+  # telegram = "Telegram username"
+  # vine = "Vine username"
+  # email = "Your email"
+
+
+# Footer Menu
+[[menu.footer]]
+  name = "About"
+  weight = 1
+  identifier = "about"
+  url = "/about/"

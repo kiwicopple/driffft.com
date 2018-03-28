@@ -1,0 +1,35 @@
+
+<div class="footer">
+  <div class="container">
+
+    <div class="columns">
+      <div class="column is-4">
+        <img src="/images/logo-menu.svg" alt="exaQuark" class="logo" />
+
+      </div>
+      <div class="column is-2">
+        <h4 class="heading">Find us online</h4>
+        {{ partial "base/social.html" . }}
+        <h4 class="heading">Discover</h4>
+        <a href="/features/">Cross Reality</a><br>
+        <a href="/blog/">Blog</a><br>
+        <a href="/files/humans.txt">Humans</a>
+      </div>
+      <div class="column is-6">
+        <h4 class="heading">Request early access</h4>
+        <div class="content">
+        <small>
+          Sign up before July and you can use exaQuark free until July 2019.
+        </small>
+        </div>
+        {{ partial "forms/invite.html" . }}
+
+
+      </div>
+    </div>
+    <div class="has-text-centered">
+      <small>© exaQuark</small>
+    </div>
+
+  </div>
+</div>

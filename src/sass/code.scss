@@ -1,0 +1,86 @@
+
+.Code {
+
+  pre {
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  .CodeMenu {
+    padding-top: 20px;
+
+    a {
+      font-weight: 600;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: 'Poppins', BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      font-size: 13px;
+      height: 35px;
+      line-height: 35px;
+      font-weight: 500;
+      letter-spacing: .03em;
+      padding: 0 14px;
+      color: #6772e5;
+      &:hover {
+        background: none;
+        color: #333;
+      }
+      &.is-active, &:hover .is-active {
+        color: #425AFF;
+        box-shadow: 0 0px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        background: #fff;
+        border-radius: 4px;
+      }
+      img {
+        display: inline;
+        height: 25px;
+        width: 25px;
+        margin: 5px 10px 5px -5px;
+        float: left;
+        box-shadow: none !important;
+        fill: #333;
+        stroke:  #333;
+        color:  #333;
+      }
+    }
+  }
+  &.Reader {
+    a.is-active {
+      background: #209cee;
+    }
+  }
+  .CodeTabs {
+    a {
+      font-family: 'Poppins', BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      font-size: 13px;
+      // height: 35px;
+      line-height: 35px;
+      font-weight: 500;
+    }
+    li.is-active a {
+      font-weight: 700;
+      color: #333;
+      border-bottom-color: #333;
+    }
+  }
+  .tab-content {
+    font-size: 12px;
+    code span {
+      font-size: 12px !important;
+      height: inherit !important;
+      margin: 0;
+      padding: 0;
+      min-width: 0;
+    }
+  }
+  &.Reader {
+    .tab-content {
+      h5 {
+        color: #209cee;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{{ partial "base/header.html" . }}
+
+</head>
+
+<body class="Contact">
+{{ partial "base/main-nav.html" . }}
+<main>
+
+  <section class="hero is-bold is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+
+        <div class="columns is-centered ">
+          <div class="column is-5 content">
+            <img src="/images/logo-menu.svg" alt="exaQuark" width="40%" style="padding-bottom:50px;" />
+
+            <h4>Request an invite</h4>
+            {{ partial "forms/invite.html" . }}
+            <br>
+            <p>If you develop online games or work in Augmented Reality, request an invite to build the future of Mixed Reality.</p>
+
+            <br>
+
+            <h4>Subscribe to our newsletter</h4>
+            {{ partial "forms/newsletter.html" . }}
+            <br>
+
+
+            <br>
+
+            <h4>Get in touch</h4>
+            {{ partial "forms/contact-us.html" . }}
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "base/footer.html" . }}
+
+
+
+
+</main>
+</body>
+</html>
