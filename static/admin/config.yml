@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "images" # Folder where user uploaded files should go
-public_folder: "/images"
+public_folder: "/" # removing path for media - we will decide the path based on the size we need
 
 collections: # A list of collections the CMS should be able to edit
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
