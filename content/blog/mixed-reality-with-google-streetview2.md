@@ -1,10 +1,11 @@
 ---
-title: "Mixed Reality with Google StreetView"
-date: 2018-01-16T14:32:18+08:00
-draft: false
-weight: 0 # 0 = normal, 1 = featured
-featuredimage: 'tracking-street-view.jpg'
-blurb: "Google StreetView provides an accessible 'overlay' for the real world. Using cheap consumer devices we created an augmented reality where real people are digitally transposed into Google StreetView."
+title: Mixed Reality with Google StreetView
+date: 2018-01-16T06:32:18.000Z
+blurb: >-
+  Google StreetView provides an accessible 'overlay' for the real world. Using
+  cheap consumer devices we created an augmented reality where real people are
+  digitally transposed into Google StreetView.
+image: /images/screen shot 2018-02-10 at 12.03.14 pm.png
 ---
 
 
