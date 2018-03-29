@@ -1,9 +1,10 @@
 baseurl = "https://driffft.com"
-title = "Driffft. Discover your next dive experience."
+title = "Driffft"
 # theme = "exaquark"
 languageCode = "en"
 # google analytics tracking id
 googleAnalytics = "UA-93673521-3"
+
 
 [taxonomies]
    tag = "tags"
@@ -13,6 +14,7 @@ googleAnalytics = "UA-93673521-3"
 [params]
   # Date format
   #dateFormat = "January 2, 2006"
+  SiteDescription = "Discover your next dive experience."
 
 # This is displayer in About page.
 [params.social]
@@ -20,11 +22,11 @@ googleAnalytics = "UA-93673521-3"
   # twitter = "kiwicopple"
   # facebook = "#"
   # googleplus = "Googleplus username"
-  # instagram = "Instagram username"
+  instagram = "https://www.instagram.com/driffftofficial"
   # tumblr = "Tumblr username"
   # flickr = "Flickr username"
   # reddit = "kiwicopple"
-  linkedin = "https://www.linkedin.com/company/driffft/"
+  linkedin = "https://www.linkedin.com/company/driffftofficial/"
   # slideshare = "Slideshare username"
   # github = "https://github.com/exaquark"
   # gitlab = "Gitlab username"

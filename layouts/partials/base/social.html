@@ -1,5 +1,8 @@
 {{- with .Site.Params.social }}
   <div class="buttons has-addons">
+    {{- with .instagram }}
+      <a class="button" href="{{.}}"> <span class="icon is-small"><i class="fab fa-instagram"></i></span> </a>
+    {{- end }}
     {{- with .twitter }}
       <a class="button" href="{{.}}"> <span class="icon is-small"><i class="fas twitter"></i></span> </a>
     {{- end }}

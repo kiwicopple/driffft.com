@@ -1,14 +1,20 @@
 <meta charset="utf-8">
-<title>Driffft | Discover your next dive experience</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{- .Title | default .Site.Title -}}</title>
+<meta name="description" content="{{- .Params.blurb | default .Site.Params.SiteDescription -}}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-<meta name="description" content="Driffft. Discover your next dive experience.">
+
+<!-- Open Graph Protocol http://ogp.me/ -->
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="{{- .Title | default .Site.Title -}}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{- .Params.blurb | default .Site.Params.SiteDescription -}}">
+<meta property="og:image" content="{{ if .Params.image }}{{.Site.BaseURL}}images/1000{{.Params.image}}{{ else }}{{.Site.BaseURL}}images/logo-menu.svg{{ end }}">
+
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
-
 <link href="/css/site.min.css" rel="stylesheet" type="text/css" media="screen" />
+
 <script src="/js/site.js"></script>
-
-
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
