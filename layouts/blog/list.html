@@ -13,7 +13,7 @@
 
 
 {{ range first 1 .Data.Pages }} <!-- featured post (weight 1) -->
-  {{ $img := (printf "/images1000%s" .Params.image) }}
+  {{ $img := (printf "/images/1000%s" .Params.image) }}
   <section class="Featured section has-text-right">
       <a class="container" style="background-image:url({{ $img }}"  href="{{.Permalink}}">
         <div class="">
