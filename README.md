@@ -1,28 +1,13 @@
-https://exaQuark.com
+https://driffft.com
 
-exaQuark is a platform for Cross-Reality games.
-We make it simple to build games which can be played on your browser, phone, and AR/VR/XR Headset - all sharing one global userbase.
-Develop games like PokemonGo, share a userbase with every other game.
-
-Augmented
-Mixed
-Hybrid
-Cross
-Extended
-Melded
-Blended
-Combined
-
-Engine
-Reality
-OS
-exar.io
 
 ## Getting started
 
 This is a Hugo site that powers exaQuark.com. You can start a dev server by running
 
 `hugo server`
+
+on windows WSL, after `npm install`, run `execstack -c node_modules/sharp/vendor/lib/librsvg-2.so.2`
 
 
 # Images

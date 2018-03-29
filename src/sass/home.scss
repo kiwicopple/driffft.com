@@ -51,7 +51,7 @@
     // background-image: linear-gradient(124deg, #0093E9 0%, #80D0C7 100%);
     // background-color: #0093E9;
     background-color: #3992ff;
-    background-image: linear-gradient(270deg, #3992ff 0%, #2f44cc 100%);
+    background-image: linear-gradient(270deg, #3992ff 0%, $red 100%);
     position: relative;
 
     &::before {
@@ -62,7 +62,7 @@
       top: 0;
       height: 200px;
       background-color: #3992ff;
-      background-image: linear-gradient(270deg, #3992ff 0%, #2f44cc 100%);
+      background-image: linear-gradient(270deg, #3992ff 0%, $red 100%);
       transform: skew(0, -6deg);
       transform-origin: top left;
       z-index: 9;
@@ -75,7 +75,7 @@
       bottom: 0;
       height: 200px;
       background-color: #3992ff;
-      background-image: linear-gradient(270deg, #3992ff 0%, #2f44cc 100%);
+      background-image: linear-gradient(270deg, #3992ff 0%, $red 100%);
       transform: skew(0, -6deg);
       transform-origin: bottom right;
       z-index: 8;
