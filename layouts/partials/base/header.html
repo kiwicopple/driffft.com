@@ -18,3 +18,24 @@
 <script src="/js/site.js"></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+
+<!-- Preconnect API. For browser compatibility, check http://caniuse.com/#feat=link-rel-preconnect -->
+<link rel="preconnect" href="{{ .Site.BaseURL }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+{{ end -}}
+
+<!-- Add prefetch and prerender on section pages. Works especially well for articles or blog posts in a series -->
+{{ if .IsPage }}
+	{{if .NextInSection }}
+	<link rel="prefetch" href="{{.NextInSection.Permalink}}">
+	<link rel="prerender" href="{{.NextInSection.Permalink}}">
+	{{ end }}
+	{{if .PrevInSection }}
+	<link rel="prefetch" href="{{.PrevInSection.Permalink}}">
+	<link rel="prerender" href="{{.PrevInSection.Permalink}}">
+	{{ end }}
+{{ end }}
