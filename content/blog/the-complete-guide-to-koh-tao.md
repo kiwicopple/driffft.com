@@ -1,7 +1,7 @@
 ---
 title: The Complete Guide to Koh Tao
 date: '2018-03-29T15:46:56+08:00'
-blurb: >-
+description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar
   sed odio eu imperdiet.
 image: /maldives.jpg

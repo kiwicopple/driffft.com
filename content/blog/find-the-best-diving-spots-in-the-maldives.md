@@ -1,7 +1,7 @@
 ---
 title: Find the best diving spots in the Maldives
 date: '2018-03-29T15:39:36+08:00'
-blurb: >-
+description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar
   sed odio eu imperdiet.
 image: /maldives.jpg

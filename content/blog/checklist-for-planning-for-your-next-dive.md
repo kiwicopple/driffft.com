@@ -1,7 +1,7 @@
 ---
 title: Checklist for planning for your next dive
 date: '2018-03-29T15:48:01+08:00'
-blurb: >-
+description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar
   sed odio eu imperdiet.
 image: /maldives.jpg

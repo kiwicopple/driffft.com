@@ -6,12 +6,65 @@ public_folder: "/" # removing path for media - we will decide the path based on 
 
 collections: # A list of collections the CMS should be able to edit
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Blog" # Used in the UI, ie.: "New Post"
+    label: "Blog Post" # Used in the UI, ie.: "New Post"
     folder: "content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "LLL"}
-      - {label: "Intro Blurb", name: "blurb", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Intro description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: true}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "shop" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Shop" # Used in the UI, ie.: "New Post"
+    folder: "content/shops" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Shop name", name: "title", widget: "string"}
+      - label: "Country"
+        name: "country"
+        widget: "select"
+        options: ["Australia", "Bahamas", "Brazil", "Cambodia", "Canada", "Ecuador", "Fiji", "Honduras", "Indonesia", "Laos", "Malaysia", "Maldives", "Mexico", "New Zealand", "Philippines", "Thailand", "Tonga", "USA", "Vietnam"]
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "Phone", name: "phone", widget: "string"}
+      - {label: "Featured Image", name: "image", widget: "image", required: true}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        field:
+          - {label: Image, name: image, widget: image}
+      - {label: "Brief description", name: "description", widget: "text"}
+      - {label: "About (Full description)", name: "about", widget: "markdown"}
+      - {label: "Dive info", name: "diveinfo", widget: "markdown"}
+      - label: "Dive sites"
+        name: "sites"
+        widget: "relation"
+        collection: "site"
+        searchFields: ["title"]
+        valueField: "title"
+  - name: "site" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Dive Site" # Used in the UI, ie.: "New Post"
+    folder: "content/sites" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Site name", name: "title", widget: "string"}
+      - label: "Country"
+        name: "country"
+        widget: "select"
+        options: ["Australia", "Bahamas", "Brazil", "Cambodia", "Canada", "Ecuador", "Fiji", "Honduras", "Indonesia", "Laos", "Malaysia", "Maldives", "Mexico", "New Zealand", "Philippines", "Thailand", "Tonga", "USA", "Vietnam"]
+      - {label: "Latitude", name: "lat", widget: "number", default: 0, valueType: "float"}
+      - {label: "Longitude", name: "lng", widget: "number", default: 0, valueType: "float"}
+      - {label: "Featured Image", name: "image", widget: "image", required: true}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        field:
+          - {label: Image, name: image, widget: image}
+      - {label: "Brief description", name: "description", widget: "text"}
+      - {label: "About (Full description)", name: "about", widget: "markdown"}
+      - label: "Shops that dive here"
+        name: "shops"
+        widget: "relation"
+        collection: "shop"
+        searchFields: ["title"]
+        valueField: "title"
