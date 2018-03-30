@@ -5,9 +5,10 @@ lat: 123
 lng: 123
 image: /images/maldives.jpg
 gallery:
-  - null
+  - /images/maldives.jpg
+  - /images/maldives.jpg
 description: asdas
 about: asdasd
-shops: Shope
+shops: Shope sh
 ---
 
