@@ -2,9 +2,9 @@ var fs = require('fs')
 var sharp = require('sharp')
 
 var inputDir = './images/'
-var outputDir = './static/images/'
-let squareFolder = './static/images/square/'
-let rectFolder = './static/images/rect/'
+var outputDir = './static/'
+let squareFolder = './static/square/images/'
+let rectFolder = './static/rect/images/'
 
 /*
 * reduces all images to maxwidth
@@ -17,10 +17,17 @@ fs.readdir([__dirname, '/', inputDir].join(''), function(err, files) {
 files.forEach(file => {
   let inputName = inputDir + file
 
+  // copy without resize, but optimize
+  let rawPath = outputDir + 'images/' + file
+  sharp(inputName)
+  .toFile(rawPath, function(err, info) {
+    if (err) console.log('err ' + file, err)
+  })
+
 
   // resize
   let sizes = [100,300,800,1000].forEach(width => {
-    let outputName = outputDir + width + '/' + file
+    let outputName = outputDir + width + '/images/' + file
     sharp(inputName)
     .resize(width)
     .withoutEnlargement()
