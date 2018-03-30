@@ -28,19 +28,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Address", name: "address", widget: "string"}
       - {label: "Phone", name: "phone", widget: "string"}
       - {label: "Featured Image", name: "image", widget: "image", required: true}
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        field:
-          - {label: Image, name: image, widget: image}
       - {label: "Brief description", name: "description", widget: "text"}
-      - {label: "About (Full description)", name: "about", widget: "markdown"}
+      - {label: "About (Full description)", name: "body", widget: "markdown"}
       - {label: "Dive info", name: "diveinfo", widget: "markdown"}
-      - label: "Dive Sites"
-        name: "sites"
-        widget: "list"
-        field:
-          - {label: Shop, name: shop, widget: relation, searchFields: ["title"], valueField: "title"}
   - name: "site" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Dive Site" # Used in the UI, ie.: "New Post"
     folder: "content/sites" # The path to the folder where the documents are stored
@@ -54,15 +44,19 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Latitude", name: "lat", widget: "number", default: 0, valueType: "float"}
       - {label: "Longitude", name: "lng", widget: "number", default: 0, valueType: "float"}
       - {label: "Featured Image", name: "image", widget: "image", required: true}
-      - label: "Gallery"
-        name: "gallery"
-        widget: "list"
-        field:
-          - {label: Image, name: image, widget: image}
       - {label: "Brief description", name: "description", widget: "text"}
-      - {label: "About (Full description)", name: "about", widget: "markdown"}
-      - label: "Shops that dive here"
-        name: "shops"
-        widget: "list"
-        field:
-          - {label: Shop, name: shop, widget: relation, searchFields: ["title"], valueField: "title"}
+      - {label: "About (Full description)", name: "body", widget: "markdown"}
+  - name: "liveaboard" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Liveaboards" # Used in the UI, ie.: "New Post"
+    folder: "content/liveaboards" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Name", name: "title", widget: "string"}
+      - label: "Country"
+        name: "country"
+        widget: "select"
+        options: ["Australia", "Bahamas", "Brazil", "Cambodia", "Canada", "Ecuador", "Fiji", "Honduras", "Indonesia", "Laos", "Malaysia", "Maldives", "Mexico", "New Zealand", "Philippines", "Thailand", "Tonga", "USA", "Vietnam"]
+      - {label: "Featured Image", name: "image", widget: "image", required: true}
+      - {label: "Brief description", name: "description", widget: "text"}
+      - {label: "About (Full description)", name: "body", widget: "markdown"}
+      - {label: "Dive info", name: "diveinfo", widget: "markdown"}
