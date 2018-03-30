@@ -1,7 +1,7 @@
 ---
 title: Thailand Aggressor
 country: Thailand
-image: /images/maldives.jpg
+image: /images/thailandaggressor.jpg
 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 diveinfo: |-
   * Nitrox
