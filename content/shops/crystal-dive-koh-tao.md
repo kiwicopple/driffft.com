@@ -1,5 +1,5 @@
 ---
-title: Crystal Dive
+title: Crystal Dive, Koh Tao
 country: Thailand
 address: Koh Tao
 phone: '123456789'
