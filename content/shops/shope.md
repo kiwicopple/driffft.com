@@ -9,6 +9,6 @@ gallery:
 description: adasd
 about: asdasdasd
 diveinfo: aasdasd
-sites: adsasd
+sites: Site
 ---
 
