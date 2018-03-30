@@ -1,7 +1,7 @@
 var fs = require('fs')
 var sharp = require('sharp')
 
-var inputDir = './images/'
+var inputDir = './static/images/'
 var outputDir = './static/'
 let squareFolder = './static/square/images/'
 let rectFolder = './static/rect/images/'
@@ -16,14 +16,6 @@ fs.readdir([__dirname, '/', inputDir].join(''), function(err, files) {
 
 files.forEach(file => {
   let inputName = inputDir + file
-
-  // copy without resize, but optimize
-  let rawPath = outputDir + 'images/' + file
-  sharp(inputName)
-  .toFile(rawPath, function(err, info) {
-    if (err) console.log('err ' + file, err)
-  })
-
 
   // resize
   let sizes = [100,300,800,1000].forEach(width => {

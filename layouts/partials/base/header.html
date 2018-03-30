@@ -9,9 +9,9 @@
 <meta property="og:title" content="{{- .Title | default .Site.Title -}}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:description" content="{{- .Params.blurb | default .Site.Params.SiteDescription -}}">
-<meta property="og:image" content="{{ if .Params.image }}{{.Site.BaseURL}}images/1000{{.Params.image}}{{ else }}{{.Site.BaseURL}}images/logo-menu.svg{{ end }}">
+<meta property="og:image" content="{{ if .Params.image }}{{.Site.BaseURL}}1000{{.Params.image}}{{ else }}{{.Site.BaseURL}}logo-menu.svg{{ end }}">
 
-<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/favicon.png" type="image/x-icon" />
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 <link href="/css/site.min.css" rel="stylesheet" type="text/css" media="screen" />
 

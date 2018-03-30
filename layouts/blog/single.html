@@ -10,7 +10,7 @@
 {{ partial "base/main-nav.html" . }}
 <main>
 
-{{ $img := (printf "/images/1000%s" .Params.image) }}
+{{ $img := (printf "/1000%s" .Params.image) }}
 
 <div class="featuredImage" style="background-image:url('{{$img}}')"></div>
 <!-- <img src="{{$img}}" alt="{{.Title}}" class="featuredImage"> -->
