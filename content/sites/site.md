@@ -8,6 +8,6 @@ gallery:
   - null
 description: asdas
 about: asdasd
-shops: a
+shops: Shope
 ---
 
