@@ -9,6 +9,4 @@ gallery:
   - /images/maldives.jpg
 description: asdas
 about: asdasd
-shops: Shope sh
 ---
-
