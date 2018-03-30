@@ -36,12 +36,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Brief description", name: "description", widget: "text"}
       - {label: "About (Full description)", name: "about", widget: "markdown"}
       - {label: "Dive info", name: "diveinfo", widget: "markdown"}
-      - label: "Dive sites"
+      - label: "Dive Sites"
         name: "sites"
-        widget: "relation"
-        collection: "site"
-        searchFields: ["title"]
-        valueField: "title"
+        widget: "list"
+        field:
+          - {label: Shop, name: shop, widget: relation, searchFields: ["title"], valueField: "title"}
   - name: "site" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Dive Site" # Used in the UI, ie.: "New Post"
     folder: "content/sites" # The path to the folder where the documents are stored
@@ -64,7 +63,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "About (Full description)", name: "about", widget: "markdown"}
       - label: "Shops that dive here"
         name: "shops"
-        widget: "relation"
-        collection: "shop"
-        searchFields: ["title"]
-        valueField: "title"
+        widget: "list"
+        field:
+          - {label: Shop, name: shop, widget: relation, searchFields: ["title"], valueField: "title"}
