@@ -3,13 +3,16 @@
   <div class="container">
 
     <div class="columns">
-      <div class="column is-4">
+      <div class="column is-3">
         <img src="/logo-menu.svg" alt="Driffft" class="logo" />
         <!-- <h4 class="heading">Find us online</h4> -->
         {{ partial "base/social.html" . }}
       </div>
-      <div class="column is-2">
+      <div class="column is-3">
         <h4 class="heading">Discover</h4>
+        <a href="/sites/">Dive Sites</a><br>
+        <a href="/shops/">Dive Shops</a><br>
+        <a href="/liveaboards/">Liveaboards</a><br>
         <a href="/blog/">Blog</a><br>
       </div>
       <div class="column is-6">
@@ -17,6 +20,7 @@
         <div class="content">
         <small>
           Sign up to our newsletter to recieve weekly dive deals to your inbox.
+          {{ partial "forms/newsletter.html" . }}
         </small>
         </div>
 
