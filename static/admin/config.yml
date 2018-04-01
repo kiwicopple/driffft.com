@@ -29,8 +29,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Phone", name: "phone", widget: "string"}
       - {label: "Featured Image", name: "image", widget: "image", required: true}
       - {label: "Brief description", name: "description", widget: "text"}
-      - {label: "About (Full description)", name: "body", widget: "markdown"}
-      - {label: "Dive info", name: "diveinfo", widget: "markdown"}
+      - {label: "About (Full description, Dive info)", name: "body", widget: "markdown"}
   - name: "site" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Dive Site" # Used in the UI, ie.: "New Post"
     folder: "content/sites" # The path to the folder where the documents are stored
@@ -58,5 +57,4 @@ collections: # A list of collections the CMS should be able to edit
         options: ["Australia", "Bahamas", "Brazil", "Cambodia", "Canada", "Ecuador", "Fiji", "Honduras", "Indonesia", "Laos", "Malaysia", "Maldives", "Mexico", "New Zealand", "Philippines", "Thailand", "Tonga", "USA", "Vietnam"]
       - {label: "Featured Image", name: "image", widget: "image", required: true}
       - {label: "Brief description", name: "description", widget: "text"}
-      - {label: "About (Full description)", name: "body", widget: "markdown"}
-      - {label: "Dive info", name: "diveinfo", widget: "markdown"}
+      - {label: "Body (Full description, dive info, boat features, food)", name: "body", widget: "markdown"}

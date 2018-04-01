@@ -26,16 +26,15 @@
 
         <nav class="breadcrumb" aria-label="breadcrumbs">
           <ul>
-            <!-- <li><a href="/blog/">Blog</a></li> -->
+            <li><a href="/shops/">Shops</a></li>
             <li class="is-active"><a href="{{.Permalink}}" aria-current="page">{{.Title}}</a></li>
           </ul>
         </nav>
 
-        <div class="description">
-          {{.Params.description}}
-        </div>
-
         <div class="content">
+          <p class=""><strong>Country:</strong> {{.Params.country}}</p>
+          <p class=""><strong>Address:</strong> {{.Params.address}}</p>
+          <p class=""><strong>Phone:</strong> {{.Params.phone}}</p>
           {{.Content}}
         </div>
       </div>

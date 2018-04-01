@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{{ partial "base/header.html" . }}
+
+</head>
+
+<body class="DiveSiteList">
+{{ partial "base/main-nav.html" . }}
+<main>
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="columns">
+
+    {{ range .Data.Pages }}
+      <div class="column is-half">
+        <a class="card" href="{{.Permalink}}">
+          <div class="card-image">
+            <figure class="image">
+              <img src="/rect{{.Params.image}}" alt="{{.Title}}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-6">
+              {{.Title}}
+            </p>
+            <p class="summary">
+              {{.Description}}
+            </p>
+            <p class="country">
+              {{.Params.country}}
+            </p>
+          </div>
+        </a>
+      </div>
+    {{ end }}
+
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+{{ partial "base/footer.html" . }}
+</body>
+</html>

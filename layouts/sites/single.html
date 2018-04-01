@@ -6,7 +6,7 @@
 
 </head>
 
-<body class="Showcase">
+<body class="DiveSite">
 {{ partial "base/main-nav.html" . }}
 <main>
 
@@ -26,14 +26,13 @@
 
         <nav class="breadcrumb" aria-label="breadcrumbs">
           <ul>
-            <!-- <li><a href="/blog/">Blog</a></li> -->
+            <li><a href="/sites/">Sites</a></li>
             <li class="is-active"><a href="{{.Permalink}}" aria-current="page">{{.Title}}</a></li>
           </ul>
         </nav>
 
-        <div class="description">
-          {{.Params.description}}
-        </div>
+
+        <div id="map"></div>
 
         <div class="content">
           {{.Content}}
@@ -46,9 +45,24 @@
   </div>
 </div>
 
-
-
 </main>
+<script>
+  function initMap() {
+    var siteMarker = {lat: {{.Params.lat}}, lng: {{.Params.lng}}};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: siteMarker
+    });
+    var marker = new google.maps.Marker({
+      position: siteMarker,
+      map: map
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSrvQVTROwoxH6Si2NevHEWHlWFJSJij8&callback=initMap">
+</script>
+
 {{ partial "components/cta.html" . }}
 {{ partial "base/footer.html" . }}
 </body>
